@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.packtpublishing.tddjava.ch07bdd.Runner" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-23T05:57:46" hostname="mikkita-TM1701" time="0.745">
+  <properties/>
+  <testcase name="run" classname="com.packtpublishing.tddjava.ch07bdd.Runner" time="0.745"/>
+  <system-out><![CDATA[Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story file:stories/administration.story
+
+(file:stories/administration.story)
+Narrative:
+In order to manage the book store collection
+As a store administrator
+I want to be able to add, update and remove books
+Scenario: Book details form should have all fields
+Given user is on the books screen (PENDING)
+Then field bookId exists (PENDING)
+Then field bookTitle exists (PENDING)
+Then field bookAuthor exists (PENDING)
+Then field bookDescription exists (PENDING)
+@Given("user is on the books screen")
+@Pending
+public void givenUserIsOnTheBooksScreen() {
+  // PENDING
+}
+
+@Then("field bookId exists")
+@Pending
+public void thenFieldBookIdExists() {
+  // PENDING
+}
+
+@Then("field bookTitle exists")
+@Pending
+public void thenFieldBookTitleExists() {
+  // PENDING
+}
+
+@Then("field bookAuthor exists")
+@Pending
+public void thenFieldBookAuthorExists() {
+  // PENDING
+}
+
+@Then("field bookDescription exists")
+@Pending
+public void thenFieldBookDescriptionExists() {
+  // PENDING
+}
+
+
+Scenario: User should be able to create a new book
+Given user is on the books screen (PENDING)
+When user clicks the button newBook (PENDING)
+When user sets values to the book form (PENDING)
+When user clicks the button saveBook (PENDING)
+Then book is stored (PENDING)
+@Given("user is on the books screen")
+@Pending
+public void givenUserIsOnTheBooksScreen() {
+  // PENDING
+}
+
+@When("user clicks the button newBook")
+@Pending
+public void whenUserClicksTheButtonNewBook() {
+  // PENDING
+}
+
+@When("user sets values to the book form")
+@Pending
+public void whenUserSetsValuesToTheBookForm() {
+  // PENDING
+}
+
+@When("user clicks the button saveBook")
+@Pending
+public void whenUserClicksTheButtonSaveBook() {
+  // PENDING
+}
+
+@Then("book is stored")
+@Pending
+public void thenBookIsStored() {
+  // PENDING
+}
+
+
+Scenario: User should be able to display book details
+Given user is on the books screen (PENDING)
+When user selects a book (PENDING)
+Then book form contains all data (PENDING)
+@Given("user is on the books screen")
+@Pending
+public void givenUserIsOnTheBooksScreen() {
+  // PENDING
+}
+
+@When("user selects a book")
+@Pending
+public void whenUserSelectsABook() {
+  // PENDING
+}
+
+@Then("book form contains all data")
+@Pending
+public void thenBookFormContainsAllData() {
+  // PENDING
+}
+
+
+Scenario: User should be able to update book details
+Given user is on the books screen (PENDING)
+When user selects a book (PENDING)
+When user sets values to the book form (PENDING)
+Then book is stored (PENDING)
+@Given("user is on the books screen")
+@Pending
+public void givenUserIsOnTheBooksScreen() {
+  // PENDING
+}
+
+@When("user selects a book")
+@Pending
+public void whenUserSelectsABook() {
+  // PENDING
+}
+
+@When("user sets values to the book form")
+@Pending
+public void whenUserSetsValuesToTheBookForm() {
+  // PENDING
+}
+
+@Then("book is stored")
+@Pending
+public void thenBookIsStored() {
+  // PENDING
+}
+
+
+Scenario: User should be able to delete a book
+Given user is on the books screen (PENDING)
+When user selects a book (PENDING)
+When user clicks the deleteBook button (PENDING)
+Then book is removed (PENDING)
+@Given("user is on the books screen")
+@Pending
+public void givenUserIsOnTheBooksScreen() {
+  // PENDING
+}
+
+@When("user selects a book")
+@Pending
+public void whenUserSelectsABook() {
+  // PENDING
+}
+
+@When("user clicks the deleteBook button")
+@Pending
+public void whenUserClicksTheDeleteBookButton() {
+  // PENDING
+}
+
+@Then("book is removed")
+@Pending
+public void thenBookIsRemoved() {
+  // PENDING
+}
+
+
+
+
+(AfterStories)
+
+Generating reports view to '/home/mikkita/IdeaProjects/tdd-java-ch07-books-store/target/jbehave' using formats '[stats, console, html]' and view properties '{reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, decorated=ftl/jbehave-report-decorated.ftl}'
+Reports view generated with 1 stories (of which 1 pending) containing 5 scenarios (of which 5 pending)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
