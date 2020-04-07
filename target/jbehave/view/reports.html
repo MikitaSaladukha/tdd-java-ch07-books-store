@@ -5,9 +5,6 @@
 <head>
 <title>JBehave Reports</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<style type="text/css" media="all">
-@import url( "./style/jbehave-core.css" );
-</style>
 </head>
 
 <body>
@@ -19,7 +16,7 @@
 
 <h2>Story Reports</h2>
 
-<table>
+<table id="mainTable">
 <colgroup span="2" class="stories"></colgroup>
 <colgroup span="5" class="scenarios"></colgroup>
 <colgroup span="5" class="scenarios"></colgroup>
@@ -56,7 +53,7 @@
     <th>View</th>
 </tr>
 <tr>
-<td class="story pending">Administration</td>
+<td class="story successful">Administration</td>
 <td>
 0</td>
 <td>
@@ -64,7 +61,7 @@
 <td>
 <span class="successful">5</span></td>
 <td>
-<span class="pending">5</span></td>
+0</td>
 <td>
 0</td>
 <td>
@@ -82,9 +79,9 @@
 <td>
 <span class="">21</span></td>
 <td>
-0</td>
+<span class="successful">21</span></td>
 <td>
-<span class="pending">21</span></td>
+0</td>
 <td>
 0</td>
 <td>
@@ -190,7 +187,7 @@
 <td>
 <span class="successful">5</span></td>
 <td>
-<span class="pending">5</span></td>
+0</td>
 <td>
 0</td>
 <td>
@@ -208,9 +205,7 @@
 <td>
 <span class="">21</span></td>
 <td>
-0</td>
-<td>
-<span class="pending">21</span></td>
+<span class="successful">21</span></td>
 <td>
 0</td>
 <td>
@@ -218,21 +213,39 @@
 <td>
 0</td>
 <td>
-<span class="">00:00:00.000</span></td>
+0</td>
+<td>
+<span class="">00:00:09.000</span></td>
 <td>
 Totals
 </td>
 </tr>
+
+
 </table>
 <br />
 </div>
 
 <div class="clear"></div>
 <div id="footer">
-<div class="left">Generated on 23/03/2020 08:57:47</div>
-<div class="right">JBehave &#169; 2003-2014</div>
+<div class="left">Generated on 07/04/2020 10:55:08</div>
+<div class="right">JBehave &#169; 2003-2015</div>
 <div class="clear"></div>
 </div>
+
+<script type="text/javascript" language="javascript" src="TableFilter/tablefilter.js"></script>  
+    <script language="javascript" type="text/javascript">  
+	
+	var mainTable_Props = {
+        filters_row_index: 2,
+		btn_reset: true
+    };
+    var tableFilter = setFilterGrid("mainTable", mainTable_Props, 2);
+</script>
+
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
 
 </body>
 

@@ -8,6 +8,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.jbehave.core.annotations.*;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 
@@ -18,8 +19,10 @@ public class Steps {
 
     @BeforeStory
     public void beforeStory() {
+        System.setProperty("webdriver.gecko.driver","/home/mikkita/IdeaProjects/tdd-java-ch07-books-store/geckodriver");
+
         if (webDriver == null) {
-            webDriver = new PhantomJSDriver();
+            webDriver = new FirefoxDriver();
             WebDriverRunner.setWebDriver(webDriver);
             webDriver.manage().window().setSize(new Dimension(1024, 768));
         }

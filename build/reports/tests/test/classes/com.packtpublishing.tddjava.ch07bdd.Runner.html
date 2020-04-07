@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.745s</div>
+<div class="counter">10.302s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,9 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -79,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">run</td>
-<td class="success">0.745s</td>
+<td class="success">10.302s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -100,168 +103,60 @@ In order to manage the book store collection
 As a store administrator
 I want to be able to add, update and remove books
 Scenario: Book details form should have all fields
-Given user is on the books screen (PENDING)
-Then field bookId exists (PENDING)
-Then field bookTitle exists (PENDING)
-Then field bookAuthor exists (PENDING)
-Then field bookDescription exists (PENDING)
-@Given(&quot;user is on the books screen&quot;)
-@Pending
-public void givenUserIsOnTheBooksScreen() {
-  // PENDING
-}
-
-@Then(&quot;field bookId exists&quot;)
-@Pending
-public void thenFieldBookIdExists() {
-  // PENDING
-}
-
-@Then(&quot;field bookTitle exists&quot;)
-@Pending
-public void thenFieldBookTitleExists() {
-  // PENDING
-}
-
-@Then(&quot;field bookAuthor exists&quot;)
-@Pending
-public void thenFieldBookAuthorExists() {
-  // PENDING
-}
-
-@Then(&quot;field bookDescription exists&quot;)
-@Pending
-public void thenFieldBookDescriptionExists() {
-  // PENDING
-}
-
+Given user is on the books screen
+Then field bookId exists
+Then field bookTitle exists
+Then field bookAuthor exists
+Then field bookDescription exists
 
 Scenario: User should be able to create a new book
-Given user is on the books screen (PENDING)
-When user clicks the button newBook (PENDING)
-When user sets values to the book form (PENDING)
-When user clicks the button saveBook (PENDING)
-Then book is stored (PENDING)
-@Given(&quot;user is on the books screen&quot;)
-@Pending
-public void givenUserIsOnTheBooksScreen() {
-  // PENDING
-}
-
-@When(&quot;user clicks the button newBook&quot;)
-@Pending
-public void whenUserClicksTheButtonNewBook() {
-  // PENDING
-}
-
-@When(&quot;user sets values to the book form&quot;)
-@Pending
-public void whenUserSetsValuesToTheBookForm() {
-  // PENDING
-}
-
-@When(&quot;user clicks the button saveBook&quot;)
-@Pending
-public void whenUserClicksTheButtonSaveBook() {
-  // PENDING
-}
-
-@Then(&quot;book is stored&quot;)
-@Pending
-public void thenBookIsStored() {
-  // PENDING
-}
-
+Given user is on the books screen
+When user clicks the button newBook
+When user sets values to the book form
+When user clicks the button saveBook
+Then book is stored
 
 Scenario: User should be able to display book details
-Given user is on the books screen (PENDING)
-When user selects a book (PENDING)
-Then book form contains all data (PENDING)
-@Given(&quot;user is on the books screen&quot;)
-@Pending
-public void givenUserIsOnTheBooksScreen() {
-  // PENDING
-}
-
-@When(&quot;user selects a book&quot;)
-@Pending
-public void whenUserSelectsABook() {
-  // PENDING
-}
-
-@Then(&quot;book form contains all data&quot;)
-@Pending
-public void thenBookFormContainsAllData() {
-  // PENDING
-}
-
+Given user is on the books screen
+When user selects a book
+Then book form contains all data
 
 Scenario: User should be able to update book details
-Given user is on the books screen (PENDING)
-When user selects a book (PENDING)
-When user sets values to the book form (PENDING)
-Then book is stored (PENDING)
-@Given(&quot;user is on the books screen&quot;)
-@Pending
-public void givenUserIsOnTheBooksScreen() {
-  // PENDING
-}
-
-@When(&quot;user selects a book&quot;)
-@Pending
-public void whenUserSelectsABook() {
-  // PENDING
-}
-
-@When(&quot;user sets values to the book form&quot;)
-@Pending
-public void whenUserSetsValuesToTheBookForm() {
-  // PENDING
-}
-
-@Then(&quot;book is stored&quot;)
-@Pending
-public void thenBookIsStored() {
-  // PENDING
-}
-
+Given user is on the books screen
+When user selects a book
+When user sets new values to the book form
+Then book is updated
 
 Scenario: User should be able to delete a book
-Given user is on the books screen (PENDING)
-When user selects a book (PENDING)
-When user clicks the deleteBook button (PENDING)
-Then book is removed (PENDING)
-@Given(&quot;user is on the books screen&quot;)
-@Pending
-public void givenUserIsOnTheBooksScreen() {
-  // PENDING
-}
-
-@When(&quot;user selects a book&quot;)
-@Pending
-public void whenUserSelectsABook() {
-  // PENDING
-}
-
-@When(&quot;user clicks the deleteBook button&quot;)
-@Pending
-public void whenUserClicksTheDeleteBookButton() {
-  // PENDING
-}
-
-@Then(&quot;book is removed&quot;)
-@Pending
-public void thenBookIsRemoved() {
-  // PENDING
-}
-
+Given user is on the books screen
+When user selects a book
+When user clicks the button deleteBook
+Then book is removed
 
 
 
 (AfterStories)
 
 Generating reports view to '/home/mikkita/IdeaProjects/tdd-java-ch07-books-store/target/jbehave' using formats '[stats, console, html]' and view properties '{reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, decorated=ftl/jbehave-report-decorated.ftl}'
-Reports view generated with 1 stories (of which 1 pending) containing 5 scenarios (of which 5 pending)
+Reports view generated with 1 stories (of which 0 pending) containing 5 scenarios (of which 0 pending)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>1586246098721	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofileWWpcq3&quot;
+1586246099129	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586246099550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586246099550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586246099551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586246099551	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586246101957	Marionette	INFO	Listening on port 45259
+1586246102030	Marionette	WARN	TLS certificate errors will be ignored for this session
+апр. 07, 2020 10:55:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 </pre>
 </span>
 </div>
@@ -273,7 +168,7 @@ Reports view generated with 1 stories (of which 1 pending) containing 5 scenario
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 23 мар. 2020 г., 8:57:47</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 7 апр. 2020 г., 10:55:08</p>
 </div>
 </div>
 </body>
